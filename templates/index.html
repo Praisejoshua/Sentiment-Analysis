@@ -1,0 +1,354 @@
+~<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chiom_Bite</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+
+ <!-- Plugins CSS ---->
+ <link rel="stylesheet" href="{{url_for ('static', filename='css/plugins.css')}}" />
+ <!-- Bootstap CSS -->
+ <link rel="stylesheet" href="{{url_for ('static', filename='css/adminlte.min.css')}}" >
+ <!-- Main Style CSS -->
+ <link rel="stylesheet" href="{{url_for ('static', filename='css/style.css')}}" >
+ <link rel="stylesheet" href="{{url_for ('static', filename='css/responsive.css')}}" >
+</head>
+
+<body class="template-index belle template-index-belle">
+  <div class="pageWrapper">
+    <!--Header-->
+    <nav class="navbar navbar-expand-sm bg-light navbar-dark fixed-top">
+      <div class="container">
+        <img src="{{url_for ('static', filename='images/logo2.png')}}" alt="" height="80">
+        <a class="navbar-brand text-greendeep text-bold" href="#">
+          Chi<span class="dif-color text-bold">om_Bi</span>te
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-greendeep text-boldi" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-greendeep green-col text-boldi" href="{{url_for('admin')}}">Admin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link green-col text-greendeep text-boldi" href="#">Contact Us</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link green-col text-greendeep text-boldi" href="#">About Us</a>
+            </li>    
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Home slider-->
+    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{{url_for ('static', filename='images/1.jpeg')}}" alt="Los Angeles" class="d-block w-100" height="700">
+      <div class="carousel-caption">
+        <h3>POS workability</h3>
+        <p>Show with us at affordabe price and enjoy our services</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{{url_for ('static', filename='images/3.jpg')}}" alt="Chicago" class="d-block w-100" height="700">
+      <div class="carousel-caption">
+        <h3>Latest Shoping on Cloths</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, autem.</p>
+      </div> 
+    </div>
+    <div class="carousel-item">
+      <img src="{{url_for ('static', filename='images/2.webp')}}" alt="New York" class="d-block w-100" height="700">
+      <div class="carousel-caption">
+        <h3>Our Show Room</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, minus.</p>
+      </div>  
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+    <!--End Home slider-->
+    <section>
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="text-center mb-4">
+              <h2 class="h1-about">About Us</h2>
+              <p class="font-13 text-bold">
+                Our Company is based on your wants
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <img src="{{url_for ('static', filename='images/abot1.jpeg')}}" alt="" class="rounded" height="400" width="500">
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="text-lg-left">
+              <h2 class="h1-about">Our Core Values</h2>
+              <p class="text-justify p-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est
+                a odio et molestias impedit, ut saepe voluptatum nihil hic,
+                vitae veritatis maxime cumque, veniam cum aliquam debitis
+                harum! Facilis ad necessitatibus quos saepe deserunt accusamus
+                iste magnam possimus eveniet. Quisquam molestias accusamus
+                optio. Eius omnis adipisci, illum debitis, eaque, ex
+                reiciendis nulla dolor quam earum amet voluptatem! Explicabo,
+                hic. Expedita molestias obcaecati possimus quasi veritatis
+                mollitia veniam sit pariatur optio, excepturi repellendus, in
+                nostrum id amet magni ad architecto accusantium aliquam
+                corrupti! Optio incidunt minima accusamus minus veniam
+                repellendus ducimus exercitationem commodi laudantium, velit
+                sunt, voluptatibus placeat! Nulla numquam minima, quaerat
+                obcaecati enim vero, harum provident, magnam ea incidunt quae
+                qui fugit totam vel odit maxime impedit ipsa nisi molestiae
+                pariatur? Perferendis ad beatae, odio provident ab sapiente
+                cupiditate consequatur exercitationem ea deserunt aspernatur
+                quidem voluptates ut quis rerum, eveniet dolores? Nobis harum,
+                iusto ea blanditiis vitae nam quam? Aspernatur minima dolorum
+                quo iusto soluta incidunt adipisci doloremque nobis magnam,
+                eum debitis facere libero amet perferendis blanditiis? Ipsam
+                earum perspiciatis facere amet,
+              </p>
+              <a href="#" class="bg-dark btn rounded text-bold-btn">
+                Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- product section -->
+    <section>
+      <div class="container mt-5 mb-5">
+        <div class="row">
+          <div class="col-md-12 col-12">
+            <div class="text-lg-left">
+              <h2 class="h1-about">Products</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-12">
+            <div class="image-fluid">
+              <img src="{{url_for ('static', filename='images/product-images/home15-product4-1.jpg')}}" class="card-img-top img-h image-fluid" alt="..." />
+              <div class="card-body custom-btn-top">
+                <h5 class="card-title mt-4">Litum Solar</h5>
+                <p class="card-text">Best for Homes and Energy Conservation</p>
+                <div class="dropdown">
+                    <form action="/analyze" class="dropdown-menu" aria-labelledby="commentDropdown" method="post">
+                      <textarea name="text" cols="30" rows="5"></textarea>
+                      <input type="hidden" name="image_filename" value="home15-product4-1.jpg"> <!-- Add hidden input for image filename -->
+                      <input type="submit" value="Analyze" style="background-color: green; color: white; align-items: center; margin-left: 8px; width: 170px;">
+                    </form>
+                </div>                 
+                  <button class="rounded p-2 dropdown-toggle btn btn-link" type="button" id="commentDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  Comment
+                  </button>
+                <a href="#"><span class="badge bg-light p-text mb-4">10</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-12">
+            <div class="image-fluid">
+              <img src="{{url_for ('static', filename='images/product-images/product-image38.jpg')}}" class="card-img-top img-h image-fluid" alt="..." />
+              <div class="card-body custom-btn-top">
+                <h5 class="card-title mt-4">Ghana Ankara</h5>
+                <p class="card-text"></p>
+                <div class="dropdown">
+                  <form action="/analyze" class="dropdown-menu" aria-labelledby="commentDropdown" method="post">
+                    <textarea name="text" cols="30" rows="5"></textarea>
+                    <input type="hidden" name="image_filename" value="product-image38.jpg"> <!-- Add hidden input for image filename -->
+                    <input type="submit" value="Analyze" style="background-color: green; color: white; align-items: center; margin-left: 8px; width: 170px;">
+                  </form>
+                </div>                 
+                  <button class="rounded p-2 dropdown-toggle btn btn-link" type="button" id="commentDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  Comment
+                  </button>
+                <a href="#"><span class="badge bg-light p-text mb-4">10</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-12">
+            <div class="image-fluid">
+              <img src="{{url_for ('static', filename='images/product-images/product-image29.jpg')}}" class="card-img-top img-h image-fluid" alt="..." />
+              <div class="card-body custom-btn-top">
+                <h5 class="card-title mt-4">Croptop and Black Skirt</h5>
+                <p class="card-text">Beauty in expressional ways</p>
+                <div class="dropdown">
+                  <form action="/analyze" class="dropdown-menu" aria-labelledby="commentDropdown" method="post">
+                    <textarea name="text" cols="30" rows="5"></textarea>
+                    <input type="hidden" name="image_filename" value="product-image29.jpg"> <!-- Add hidden input for image filename -->
+                    <input type="submit" value="Analyze" style="background-color: green; color: white; align-items: center; margin-left: 8px; width: 170px;">
+                  </form>
+                </div>                 
+                  <button class="rounded p-2 dropdown-toggle btn btn-link" type="button" id="commentDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  Comment
+                  </button>
+                <a href="#"><span class="badge bg-light p-text mb-4">10</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-12">
+            <div class="image-fluid">
+              <img src="{{url_for ('static', filename='images/product-images/product-image21.jpg')}}" class="card-img-top img-h image-fluid" alt="..." />
+              <div class="card-body custom-btn-top">
+                <h5 class="card-title mt-4">Croptop and Black Skirt</h5>
+                <p class="card-text">Beauty in expressional ways</p>
+                <div class="dropdown">
+                  <form action="/analyze" class="dropdown-menu" aria-labelledby="commentDropdown" method="post">
+                    <textarea name="text" cols="30" rows="5"></textarea>
+                    <input type="hidden" name="image_filename" value="product-image21.jpg"> <!-- Add hidden input for image filename -->
+                    <input type="submit" value="Analyze" style="background-color: green; color: white; align-items: center; margin-left: 8px; width: 170px;">
+                  </form>
+                </div>                 
+                  <button class="rounded p-2 dropdown-toggle btn btn-link" type="button" id="commentDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  Comment
+                  </button>
+                <a href="#"><span class="badge bg-light p-text mb-4">10</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!--Footer-->
+    <footer id="footer">
+      <div class="site-footer">
+        <div class="container">
+          <!--Footer Links-->
+          <div class="footer-top">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-links">
+                <h4 class="h4">Quick Shop</h4>
+                <ul>
+                  <li><a href="#">Women</a></li>
+                  <li><a href="#">Men</a></li>
+                  <li><a href="#">Kids</a></li>
+                  <li><a href="#">Sportswear</a></li>
+                  <li><a href="#">Sale</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-links">
+                <h4 class="h4">Informations</h4>
+                <ul>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Privacy policy</a></li>
+                  <li><a href="#">Terms &amp; condition</a></li>
+                  <li><a href="#">My Account</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-links">
+                <h4 class="h4">Customer Services</h4>
+                <ul>
+                  <li><a href="#">Request Personal Data</a></li>
+                  <li><a href="#">FAQ's</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Orders and Returns</a></li>
+                  <li><a href="#">Support Center</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3 col-lg-3 contact-box">
+                <h4 class="h4">Contact Us</h4>
+                <ul class="addressFooter">
+                  <li>
+                    <i class="icon anm anm-map-marker-al"></i>
+                    <p>Black A,<br />Veritas University, Bwari, Abuja</p>
+                  </li>
+                  <li class="phone">
+                    <i class="icon anm anm-phone-s"></i>
+                    <p>(+234) 000 000 0000</p>
+                  </li>
+                  <li class="email">
+                    <i class="icon anm anm-envelope-l"></i>
+                    <p>support@Chiom_Bite.com</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--End Footer Links-->
+          <hr />
+          <div class="footer-bottom">
+            <div class="row">
+              <!--Footer Copyright-->
+              <div
+                class="col-12 col-sm-12 col-md-6 col-lg-6 order-1 order-md-0 order-lg-0 order-sm-1 copyright text-sm-center text-md-left text-lg-left">
+                <span></span> <a href="#">Chiom_Bite</a>
+              </div>
+              <!--End Footer Copyright-->
+              <!--Footer Payment Icon-->
+              <div
+                class="col-12 col-sm-12 col-md-6 col-lg-6 order-0 order-md-1 order-lg-1 order-sm-0 payment-icons text-right text-md-center">
+                <ul class="payment-icons list--inline">
+                  <li>
+                    <i class="icon fa fa-cc-visa" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                    <i class="icon fa fa-cc-mastercard" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                    <i class="icon fa fa-cc-discover" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                    <i class="icon fa fa-cc-paypal" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                    <i class="icon fa fa-cc-amex" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                    <i class="icon fa fa-credit-card" aria-hidden="true"></i>
+                  </li>
+                </ul>
+              </div>
+              <!--End Footer Payment Icon-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--End Footer-->
+  </div>
+
+  <!-- javascript links 
+  <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="assets/js/vendor/jquery.cookie.js"></script>-->
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Including Javascript
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/lazysizes.js"></script>
+  <script src="assets/js/main.js"></script> -->
+</body>
+
+</html>

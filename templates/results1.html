@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis Results</title>
+</head>
+<body>
+    <h1>Sentiment Analysis Results</h1>
+
+    {% for result in sentiment_history %}
+        <p><strong>Input Text:</strong> {{ result.input_text }}</p>
+        <p><strong>Image Filename:</strong> {{ result.image_filename }}</p> 
+
+        <!-- Display the image if image_filename is provided -->
+        {% if result.image_filename %}
+            <img src="{{ url_for('static', filename='images/product-images/' + result.image_filename) }}" alt="Image" style="max-width: 300px;">
+        {% endif %}
+
+        <h2>Sentiment:</h2>
+        <ul>
+            <li><strong>Negative:</strong> {{ result.positive_prob | round(4) }}</li>
+            <li><strong>Neutral:</strong> {{ result.neutral_prob | round(4) }}</li>
+            <li><strong>Positive:</strong> {{ result.negative_prob | round(4) }}</li>
+        </ul>
+        <p><strong>Overall sentiment:</strong> 
+            {% if result.positive_prob > result.neutral_prob and result.positive_prob > result.negative_prob %}
+                <span class="highlight">Negative</span>
+            {% elif result.neutral_prob > result.positive_prob and result.neutral_prob > result.negative_prob %}
+                <span class="highlight">Neutral</span>
+            {% else %}
+                <span class="highlight">Positive</span>
+            {% endif %}
+        </p>
+    {% endfor %}
+</body>
+</html>
